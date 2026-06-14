@@ -6,7 +6,7 @@
     "tagline": "Search your screenshots like Google searches the web.",
     "short_description": "Instantly search the text inside your screenshots — fully offline, fully private.",
     "full_description": "ScreenSeek is a desktop productivity application that lets you search through thousands of screenshots by the text inside them. It uses EasyOCR and Tesseract to extract text from every image in your chosen folders, stores everything in a local SQLite database with FTS5 full-text search, and delivers instant, ranked results — complete with thumbnails, metadata, and extracted text preview. All processing is 100% local. No cloud. No telemetry. No data leaves your machine.",
-    "category": "Productivity",
+    "category": "Desktop Apps",
     "tags": [
       "screenshots",
       "ocr",
