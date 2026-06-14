@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "ScreenSeek",
+    "slug": "screenseek",
+    "tagline": "Search your screenshots like Google searches the web.",
+    "short_description": "Instantly search the text inside your screenshots — fully offline, fully private.",
+    "full_description": "ScreenSeek is a desktop productivity application that lets you search through thousands of screenshots by the text inside them. It uses EasyOCR and Tesseract to extract text from every image in your chosen folders, stores everything in a local SQLite database with FTS5 full-text search, and delivers instant, ranked results — complete with thumbnails, metadata, and extracted text preview. All processing is 100% local. No cloud. No telemetry. No data leaves your machine.",
+    "category": "Productivity",
+    "tags": [
+      "screenshots",
+      "ocr",
+      "search",
+      "productivity",
+      "privacy",
+      "offline",
+      "desktop",
+      "image-search",
+      "text-extraction",
+      "local-first"
+    ],
+    "version": "1.0.0",
+    "release_date": "2026-06-13",
+    "featured": false
+  },
+  "links": {
+    "github": "https://github.com/e-amponsah/screenseek",
+    "download": "https://github.com/e-amponsah/screenseek/releases/latest/download/ScreenSeek.exe",
+    "documentation": "https://github.com/e-amponsah/screenseek#readme"
+  },
+  "assets": {
+    "logo": "assets/logo.png",
+    "icon": "assets/logo/screenseek.ico",
+    "screenshots": [
+      "assets/screenshots/01_search_results.png",
+      "assets/screenshots/02_preview.png",
+      "assets/screenshots/03_settings.png",
+      "assets/screenshots/04_index_manager.png",
+      "assets/screenshots/05_empty_state.png"
+    ]
+  },
+  "author": {
+    "name": "Elliot Amponsah",
+    "email": "eramponsah9@gmail.com"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-06-13",
+      "notes": [
+        "Initial release",
+        "EasyOCR + Tesseract OCR with automatic fallback",
+        "SQLite FTS5 full-text search with phrase, partial, and multi-word matching",
+        "Real-time folder monitoring via Watchdog",
+        "WEBP thumbnail cache",
+        "Dark and light themes",
+        "Windows executable via PyInstaller",
+        "100% local — no internet required"
+      ]
+    }
+  ],
+  "requirements": {
+    "os": ["Windows 10+", "macOS 12+", "Ubuntu 20.04+"],
+    "python": "3.10+",
+    "dependencies": [
+      "PySide6>=6.6.0",
+      "easyocr>=1.7.0",
+      "pytesseract>=0.3.10",
+      "Pillow>=10.0.0",
+      "watchdog>=3.0.0",
+      "numpy>=1.24.0",
+      "opencv-python-headless>=4.8.0"
+    ]
+  },
+  "privacy": {
+    "telemetry": false,
+    "analytics": false,
+    "internet_required": false,
+    "data_collection": "none",
+    "data_storage": "local only — ~/.screenseek/"
+  }
+}

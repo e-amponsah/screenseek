@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\thetechjigger\\\\Documents\\\\screenseek\" -Recurse -File | Where-Object { $_.Extension -in \".py\",\".json\",\".md\",\".txt\",\".spec\",\".ico\" } | Sort-Object DirectoryName, Name | ForEach-Object { $_.FullName.Replace\\(\"c:\\\\Users\\\\thetechjigger\\\\Documents\\\\screenseek\\\\\",\"\"\\) })"
+    ]
+  }
+}
